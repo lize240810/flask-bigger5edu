@@ -1,0 +1,94 @@
+{% extends "base-layout.html" %}
+{% block title %}
+    {{ super() }}
+{% endblock %}
+{% block head_link %}
+    {{ super() }}
+    {# <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='apps/home/css/index.css') }}" /> #}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('_libs/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('_libs/font-awesome/css/font-awesome.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('apps/indexj2/css/full-slider.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('apps/indexj2/css/jPushMenu.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('apps/indexj2/css/hover.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('apps/indexj2/css/main.css') }}" />
+{% endblock %}
+{% block head_css %}
+    {{ super() }}
+{% endblock %}
+{% block head_after_link %}
+    {{ super() }}
+{% endblock %}
+{% block head_src %}
+    {{ super() }}
+{% endblock %}
+{% block head_js %}
+    {{ super() }}
+{% endblock %}
+{% block body_header %}
+    {{ super() }}
+        {# <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> #}
+        {# <title>SeFolio</title> #}
+        {# <link rel="apple-touch-icon" href="http://www.jq22.com/demo/sefolio201706200934/apple-touch-icon.png"> #}
+        
+        <!-- <link rel="stylesheet" href="SeFolio_files/media.css"> -->
+        <!-- <script src="SeFolio_files/modernizr-2.js"></script> -->
+{% endblock %}
+{% block body_main %}
+{# <body class="push-body loaded"> #}
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="header_overlay">
+                <div class="container">
+                    <div class="row header_top">
+                        <div class="col-md-12 col-sm-12 col-xs-12 logo_div">
+                            <img src="/static/apps/indexj2/img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row header_text">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <h1 style="color: rgb(34, 34, 34);">Hello, I'm <span>LiZe</span><br>
+                             Python<span>世界</span> 你好</h1>
+                        </div>
+                        <div class="col-md-6 "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <div class="fill" style="background-image:url('/static/apps/indexj2/img/slide1.jpg');"></div>
+                <div class="carousel-caption overlay"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/static/apps/indexj2/img/slide2.jpg');"></div>
+                <div class="carousel-caption overlay"></div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/static/apps/indexj2/img/slide3.jpg');"></div>
+                <div class="carousel-caption overlay"></div>
+            </div>
+            <div class="manu_div toggle-menu menu-right push-body jPushMenuBtn">
+                <button class="btn btn-primary btn-lg " title="点击开始旅程">
+                    
+                </button>
+            </div>
+        </div>
+        
+    </header>
+{% endblock %}
+{% block body_js %}
+    {{ super() }}
+    <script type="text/javascript" src="/static/apps/indexj2/js/main.js"></script>
+{% endblock %}
+</body>
+</html>

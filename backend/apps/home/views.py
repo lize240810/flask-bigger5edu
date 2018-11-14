@@ -9,6 +9,10 @@ from . import home_app, app_name
 def view_index():
     return render_template(app_name + '/index.html')
 
+@home_app.route(r'/index')
+def view_indexj2():
+    return render_template(app_name + '/index.htm.j2')
+
 @home_app.route(r'/about')
 def view_about():
     return render_template(app_name + '/about.html')

@@ -1,0 +1,48 @@
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+<aside class="app-sidebar">
+  <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="/static/apps/admin/img/avatar.jpg" alt="User Image">
+
+    <div>
+      <p class="app-sidebar__user-name">赵 瑞</p>
+      <p class="app-sidebar__user-designation">前端开发人员</p>
+    </div>
+  </div>
+  <ul class="app-menu">
+    <li data-page-id='view_index'><a class="app-menu__item" href="{{ url_for('admin.view_index') }}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label"> 仪表盘 </span></a></li>
+       <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">用户界面元素</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li data-page-id="view_bootcom"><a class="treeview-item" href="{{ url_for('admin.view_bootcom') }}"><i class="icon fa fa-circle-o"></i> Bootstrap 功能部件</a></li>
+        <li data-page-id=""><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
+        <li data-page-id="view_cards"><a class="treeview-item" href="{{ url_for('admin.view_cards') }}"><i class="icon fa fa-circle-o"></i> 图卡</a></li>
+        <li data-page-id="view_widgets"><a class="treeview-item" href="{{ url_for('admin.view_widgets') }}"><i class="icon fa fa-circle-o"></i> 小工具</a></li>
+      </ul>
+    </li>
+    <li data-page-id='view_charts'><a class="app-menu__item" href="{{ url_for('admin.view_charts') }}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">排行榜</span></a></li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">表单</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li data-page-id="view_fromcom"><a class="treeview-item" href="{{ url_for('admin.view_fromcom') }}"><i class="icon fa fa-circle-o"></i> 表单组件</a></li>
+        <li data-page-id="view_custom"><a class="treeview-item" href="{{ url_for('admin.view_custom') }}"><i class="icon fa fa-circle-o"></i> 自定义组件</a></li>
+        <li data-page-id="view_samples"><a class="treeview-item" href="{{ url_for('admin.view_samples') }}"><i class="icon fa fa-circle-o"></i> 表单样式</a></li>
+        <li data-page-id="view_notifications"><a class="treeview-item" href="{{ url_for('admin.view_notifications') }}"><i class="icon fa fa-circle-o"></i> 形式通知</a></li>
+      </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">表格</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li data-page-id='view_basic'><a class="treeview-item" href="{{ url_for('admin.view_basic') }}"><i class="icon fa fa-circle-o"></i> 基础表</a></li>
+        <li data-page-id='view_data'><a class="treeview-item" href="{{ url_for('admin.view_data') }}"><i class="icon fa fa-circle-o"></i> 数据表</a></li>
+      </ul>
+    </li>
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">页面</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li data-page-id='view_blank'><a class="treeview-item" href="{{ url_for('admin.view_blank') }}"><i class="icon fa fa-circle-o"></i> 空白页</a></li>
+        <li><a class="treeview-item" href="{# { url_for('') } #}"><i class="icon fa fa-circle-o"></i> 登录页</a></li>
+        <li><a class="treeview-item" href="{# { url_for('') } #}"><i class="icon fa fa-circle-o"></i> 锁定页</a></li>
+        <li data-page-id='view_user'><a class="treeview-item" href="{{ url_for('admin.view_user') }}"><i class="icon fa fa-circle-o"></i> 用户页</a></li>
+        <li data-page-id='view_invoice'><a class="treeview-item" href="{{ url_for('admin.view_invoice') }}"><i class="icon fa fa-circle-o"></i> 收款记录</a></li>
+        <li data-page-id='view_calendar'><a class="treeview-item" href="{{ url_for('admin.view_calendar') }}"><i class="icon fa fa-circle-o"></i> 备忘录</a></li>
+        <li data-page-id='view_mailbox'><a class="treeview-item" href="{{ url_for('admin.view_mailbox') }}"><i class="icon fa fa-circle-o"></i> 邮箱</a></li>
+        <li data-page-id='view_error'><a class="treeview-item" href="{{ url_for('admin.view_error') }}"><i class="icon fa fa-circle-o"></i> 错误页</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>

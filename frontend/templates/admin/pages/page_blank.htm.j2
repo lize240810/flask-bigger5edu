@@ -1,0 +1,28 @@
+{# form-components 表单组件 #}
+{% extends "admin/page-layout.htm.j2" %}
+  
+
+
+{% block style %}
+  {{ super() }}
+{% endblock %}
+
+{% set title_icon = 'fa-dashboard' %}
+{% set body_title = '空白页' %}
+{% set body_content = '在这里开始一段美丽的旅程' %}
+{% set dashboard = '空白页' %}
+
+{% block app_body %}
+  <div class="row">
+    <div class="col-md-12">
+      <div class="tile">
+        <div class="tile-body">创建一个漂亮的仪表板</div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block script %}
+    {{ super() }}
+{% endblock %}

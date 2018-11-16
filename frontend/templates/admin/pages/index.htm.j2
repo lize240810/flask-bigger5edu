@@ -1,0 +1,64 @@
+{# index.html 主页面 #}
+{% extends "admin/page-layout.htm.j2" %}
+  
+{% block head_css %}
+  {{ super() }}
+{% endblock %}
+
+
+{% set title_icon = 'fa-dashboard' %}
+{% set body_title = '仪表盘' %}
+{% set body_content = '内容-标题-描述' %}
+{% set dashboard = '概述' %}
+
+{% block app_body %}
+  <div class="row">
+    <div class="col-md-6 col-lg-3">
+      <div class="widget-small primary coloured-icon"><i class="icon fa fa-users fa-3x"></i>
+        <div class="info">
+          <h4>用户量</h4>
+          <p><b>5</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="widget-small info coloured-icon"><i class="icon fa fa-thumbs-o-up fa-3x"></i>
+        <div class="info">
+          <h4>点赞数</h4>
+          <p><b>25</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="widget-small warning coloured-icon"><i class="icon fa fa-files-o fa-3x"></i>
+        <div class="info">
+          <h4>上传量</h4>
+          <p><b>10</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="widget-small danger coloured-icon"><i class="icon fa fa-star fa-3x"></i>
+        <div class="info">
+          <h4>关注数</h4>
+          <p><b>500</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="tile">
+        <div class="tile-body">持续开发中</div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block script %}
+  {{ super() }}
+{% endblock %}
+
+{% block body_js %}
+  {{ super() }}
+{% endblock %}

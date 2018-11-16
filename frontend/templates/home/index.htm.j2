@@ -43,11 +43,6 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header id="myCarousel" class="carousel slide">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-        </ol>
         <div class="carousel-inner">
             <div class="header_overlay">
                 <div class="container">
@@ -58,7 +53,7 @@
                     </div>
                     <div class="row header_text">
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <h1 style="color: rgb(34, 34, 34);">Hello, I'm <span>LiZe</span><br>
+                            <h1 style="color: rgb(34, 34, 34);">{{ soup|default("Hello, I'm ") }}<span>LiZe</span><br>
                              <span>Python</span> 你好<span> 早安</span></h1>
                         </div>
                         <div class="col-md-6 "></div>
@@ -78,9 +73,14 @@
                 <div class="carousel-caption overlay"></div>
             </div>
             <div class="manu_div toggle-menu menu-right push-body jPushMenuBtn">
-                <button class="btn btn-lg " title="点击开始旅程">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                </ol>
+            {#     <button class="btn btn-lg " title="点击开始旅程">
                     <i class="glyphicon glyphicon-send"></i>
-                </button>
+                </button> #}
             </div>
         </div>
         
